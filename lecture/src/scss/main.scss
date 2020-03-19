@@ -1,8 +1,242 @@
 @import 'config';
+body{
+  margin: 0;
+}
+.navwrap{
+  width:100%;
+  height:60px;
+  position:fixed;
+  display:grid;
+  grid-template-columns: 206px 550px;
+  justify-content: space-around;
+  background-color:#232a38;
+  z-index: 10;
+}
+.navwrap *{
+  color:white;
+}
+.navleft{
+  height:60px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  place-content:center center;
+}
+.logowrap{
+  width:64px;
+  height:40px;
+  border-right:2px solid white;
+  float:right;
+}
+.logo{
+  width:44px;
+  height:40px;
+  background-image: url("../../logo.png");
+  background-size:cover;
+}
+.name{
+  padding-top: 5px;
+  font-weight: bold;
+  font-size:20px;
+}
+.navright{
+  display:grid;
+  grid-template-columns: 120px 106px 63px 74px 103px;
+  place-content: center center;
+}
+.navright *{
+  display: grid;
+  place-content: center center;
+  font-size: 17px;
+  // background: blue;
+  // font-weight: bold;
+}
+.signup{
+  background:#fbb531;
+  border-radius: 20px;
+  height:40px;
+}
+.headcontent{
+  width:100%;
+  height:700px;
+  background-image: url("../../thumbnail.jpg");
+  background-size:cover;
+}
+.headwrap{
+  width:100%;
+  height:700px;
+  background:rgba(0,0,0,0.6);
+  display:grid;
+  place-content: center center ;
+}
+.headtitle{
+  width:100%;
+  height:52px;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color:white;
+}
+.joinbutton{
+  background:#7f23e2;
+  width:290px;
+  height:61px;
+  border-radius: 32px;
+  display:grid;
+  place-content: center center;
+  margin:50px 0 0 200px;
+}
+.joinbuttext{ 
+  font-size: 18px;
+  font-weight: 600;
+  color:white;
+}
+.midcontent{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.midwrap{
+  display:grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  width:60%;
+  // height:1000px;
+  // border:1px solid black;
 
-h1 {
-  color: $color-primary;
+}
+.midtitle{
+  width:100%;
+  height:50px;
+  text-align: center;
+  // border:1px solid black;
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+.contentwrap{
+  display:grid;
+  justify-content: space-around;
+  grid-gap: 15px;
+  width:100%;
+  grid-template-columns: repeat(auto-fit, 360px);
+  // border:1px solid black;
+}
+.content{
+  width:360px;
+  height:330px;
+  // background:blue;
+}
+.classimage{
+  position:relative;
+  width:360px;
+  height:204px;
+  background-image: url("../../thumbnail.jpg");
+  background-size: cover;
+  border-radius: 9px;
+  z-index:1;
+}
+.classinfowrap{
+  position:relative;
+  top:-40px;
+  width:360px;
+  height:150px;
+  border-radius: 9px;
+  z-index:2;
+  text-align: center;
+  background:white;
+}
+.classtitle{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top:10px;
+}
+.classinfo{
+  margin:10px 0 10px 0; 
+}
+.coursebuttonwrap{
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 50px;
+}
+.allcoursebutton{
+  display:grid;
+  place-content: center center;
+  width:290px;
+  height:50px;
+  text-align: center;
+  background-color: #f38633;    //그라데이션으로 바꾸기//
+  border-radius: 50px;
+}
+.cbtext{
+  color:white;
+  font-weight: bold;
+}
+.footer{
+  width:100%;
+  height:450px;
+  background:#232a38;
+}
+.footerwrap{
+  width:100%;
+  height:100%;
+}
+.footertop{
+  display:grid;
+  width:100%;
+  height:240px;
+  place-content: end center;
+  border-bottom: 1px solid gray;
+}
+.snswrap{
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+.youtube, .facebook, .likes{
+  display:grid;
+  grid-template-rows: 98px 20px;
+  justify-content: center;
+  width:87px;
+  height:118px;
+  color:gray;
+  margin-bottom: 30px;
+}
+.count{
+  text-align: center;
+  color:gray;
+}
+.footerbottom{
+  width:100%;
+  height:210px;
+  display: flex;
+  justify-content:space-around;
+}
+.footerbottomleft{
+  width:300px;
+  height:84px;
+}
+.footerbottommiddle{
+  width:300px;
+  text-align: center;
+}
+.footerbottomright{
+  width:300px;
+  text-align: right;
+}
+.footerbottomleft,.footerbottommiddle, .footerbottomright{
+  padding-top: 50px;
+  color:gray;
+}
+.chatbutton{
+  display:grid;
+  place-content: center center;
+  width:62px;
+  height:62px;
+  border-radius: 50%;
+  background:white;
+  margin-left: 95%;
+  margin-top:180px;
+    position:fixed;
 }
