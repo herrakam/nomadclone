@@ -1,4 +1,11 @@
 @import 'config';
+$button-color:linear-gradient(to right, #f57e35, #fcbf30 );
+@mixin buttonani {
+  transition: 0.5s;
+  position:relative;
+  top:-5px;
+  
+}
 body{
   margin: 0;
 }
@@ -52,7 +59,7 @@ body{
   // font-weight: bold;
 }
 .signup{
-  background:#fbb531;
+  background:$button-color;
   border-radius: 20px;
   height:40px;
 }
@@ -77,6 +84,8 @@ body{
   color:white;
 }
 .joinbutton{
+  position:relative;
+  top:0;
   background:#7f23e2;
   width:290px;
   height:61px;
@@ -84,6 +93,9 @@ body{
   display:grid;
   place-content: center center;
   margin:50px 0 0 200px;
+}
+.joinbutton:hover{
+  @include buttonani;
 }
 .joinbuttext{ 
   font-size: 18px;
@@ -120,12 +132,15 @@ body{
   grid-gap: 15px;
   width:100%;
   grid-template-columns: repeat(auto-fit, 360px);
-  // border:1px solid black;
 }
 .content{
   width:360px;
   height:330px;
   // background:blue;
+}
+.classimagewrap{
+  overflow:hidden;
+  border-radius: 9px;
 }
 .classimage{
   position:relative;
@@ -135,6 +150,10 @@ body{
   background-size: cover;
   border-radius: 9px;
   z-index:1;
+}
+.classimage:hover{
+  transform:scale(1.1);
+  transition:0.5s;
 }
 .classinfowrap{
   position:relative;
@@ -160,13 +179,23 @@ body{
   margin-bottom: 50px;
 }
 .allcoursebutton{
+  position:relative;
+  top:0;
   display:grid;
   place-content: center center;
   width:290px;
   height:50px;
   text-align: center;
-  background-color: #f38633;    //그라데이션으로 바꾸기//
+  background:$button-color;
   border-radius: 50px;
+}
+.allcoursebutton:hover{
+  @include buttonani;
+  // background-color: snow;
+}
+.classinfowrap:hover{
+  @include buttonani;
+  top:-50px;
 }
 .cbtext{
   color:white;

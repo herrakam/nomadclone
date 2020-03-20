@@ -52,7 +52,9 @@ body {
   font-size: 17px; }
 
 .signup {
-  background: #fbb531;
+  background: -webkit-gradient(linear, left top, right top, from(#f57e35), to(#fcbf30));
+  background: -o-linear-gradient(left, #f57e35, #fcbf30);
+  background: linear-gradient(to right, #f57e35, #fcbf30);
   border-radius: 20px;
   height: 40px; }
 
@@ -77,6 +79,8 @@ body {
   color: white; }
 
 .joinbutton {
+  position: relative;
+  top: 0;
   background: #7f23e2;
   width: 290px;
   height: 61px;
@@ -84,6 +88,13 @@ body {
   display: grid;
   place-content: center center;
   margin: 50px 0 0 200px; }
+
+.joinbutton:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  top: -5px; }
 
 .joinbuttext {
   font-size: 18px;
@@ -128,6 +139,10 @@ body {
   width: 360px;
   height: 330px; }
 
+.classimagewrap {
+  overflow: hidden;
+  border-radius: 9px; }
+
 .classimage {
   position: relative;
   width: 360px;
@@ -136,6 +151,14 @@ body {
   background-size: cover;
   border-radius: 9px;
   z-index: 1; }
+
+.classimage:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .classinfowrap {
   position: relative;
@@ -165,13 +188,32 @@ body {
   margin-bottom: 50px; }
 
 .allcoursebutton {
+  position: relative;
+  top: 0;
   display: grid;
   place-content: center center;
   width: 290px;
   height: 50px;
   text-align: center;
-  background-color: #f38633;
+  background: -webkit-gradient(linear, left top, right top, from(#f57e35), to(#fcbf30));
+  background: -o-linear-gradient(left, #f57e35, #fcbf30);
+  background: linear-gradient(to right, #f57e35, #fcbf30);
   border-radius: 50px; }
+
+.allcoursebutton:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  top: -5px; }
+
+.classinfowrap:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  top: -5px;
+  top: -50px; }
 
 .cbtext {
   color: white;
